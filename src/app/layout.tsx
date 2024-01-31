@@ -1,8 +1,10 @@
+import NProgress from "@/components/provider/NProgress";
+import Navbar from "@/components/shared/navbar";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <NProgress />
+      <body className={manrope.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
