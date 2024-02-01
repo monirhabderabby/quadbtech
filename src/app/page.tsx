@@ -19,7 +19,6 @@ export default async function Home() {
         <h3 className="text-[44px]">Shows</h3>
         <div className="grid grid-cols-4 gap-5">
           {data.map((item) => {
-            console.log(item.show);
             return (
               <ShowCard
                 key={item.show.id}
