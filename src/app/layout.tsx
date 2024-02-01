@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NProgress />
       <body className={manrope.className}>
+        <NProgress />
         <Navbar />
         {children}
       </body>

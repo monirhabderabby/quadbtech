@@ -4,7 +4,7 @@ import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 const NProgress = () => {
   return (
     <ProgressBar
-      height="3px"
+      height="4px"
       color="#3c948b"
       options={{ showSpinner: false }}
     />
